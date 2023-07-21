@@ -297,6 +297,14 @@ section {
 
 .about-pic {
     border-radius: 2rem;
+
+    /* image size*/
+    width: 400px;
+    height: 300px;
+
+
+    /* image fit */
+    object-fit: cover;
 }
 
 .arrow {
