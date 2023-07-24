@@ -478,3 +478,8 @@ article .icon {
 .email-icon {
     height: 2.5rem;
 }
+.project-btn {
+    /*content fit in one line*/
+    white-space: nowrap;
+
+}
