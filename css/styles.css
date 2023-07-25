@@ -9,6 +9,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+
+    padding-top: 17vh; /* Adjust this value based on your navbar's height */
 }
 
 html {
@@ -37,12 +39,30 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; /* Ensure the navbar is above other elements */
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+}
+
+/* Styling for the sticky navbar */
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
 }
 
 a {
