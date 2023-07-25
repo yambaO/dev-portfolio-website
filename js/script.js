@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 element.textContent += text.charAt(charIndex);
                 charIndex++;
                 setTimeout(type, 100); // Adjust typing speed here (lower value for faster typing)
+            } else {
+                // Show the content after the animation is finished
+                element.classList.add("visible");
             }
         };
         type();

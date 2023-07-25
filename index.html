@@ -42,11 +42,14 @@
 <!--  Section -->
 <section id="profile">
     <div class="section__pic-container">
-        <img src="./assets/profile-img.jpg" id="profile-img"  alt=" profile picture" />
+        <div id="profile-img-container">
+            <div class="square-background"></div>
+            <img src="./assets/profile-img.jpg" id="profile-img" alt="profile picture" />
+        </div>
     </div>
     <div class="section__text">
         <h1 class="title">Hi, I'm Yamba Ouandaogo</h1>
-        <p class="section__text__p2"> Full Stack Software Engineer</p>
+        <p class="section__text__p2 job-title"> Full Stack Software Engineer</p>
         <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Resume</button>
             <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
@@ -56,6 +59,7 @@
             <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/yambaO'"/>
         </div>
     </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
 </section>
 <!--  about Section -->
 <section id="about">

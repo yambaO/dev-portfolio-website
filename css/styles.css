@@ -180,20 +180,52 @@ a:hover {
 }
 /*SECTION*
 /* PROFILE IMAGE */
-#profile-img {
- /* image full circle*/
-    border-radius: 50%;
-    /* image size */
-    width: 300px;
-    height: 300px;
-    /* image fit */
-    object-fit: cover;
-    /* image border */
-    border: 2px solid #fff;
-    /* image shadow */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+:root {
+    /* Define the custom property --image-shade with the desired shade color */
+    --image-shade: #e8e6e6;
+}
+
+/*#profile {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 5rem;*/
+/*    height: 80vh;*/
+/*}*/
+
+#profile-img-container {
+    /* Set the size and position of the container */
+    position: relative;
+    width: 300px; /* Adjust the width to match the image size */
+    height: 300px; /* Adjust the height to match the image size */
 
 }
+
+#profile-img {
+    /* Keep the image settings as before */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add a higher z-index to place the image in front of the square background */
+    z-index: 2;
+    position: absolute;
+}
+
+.square-background {
+    /* Set the size and style of the square */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 30%; /* Adjust the left position to shift the square to the right */
+    background-color: var(--image-shade); /* Use the custom property for the background color */
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Lower the z-index to place the square background behind the image */
+    z-index: 1;
+}
+
 
 section {
     padding-top: 4vh;
@@ -210,16 +242,20 @@ section {
 
 #profile {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    text-align: center;
+    padding: 2rem 0; /* Adjust the padding as needed */
+    min-height: 100vh;
 }
 
 .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    /*margin: auto 0;*/
+    margin-bottom: 0.5rem;
 }
 
 .section__text {
@@ -238,6 +274,7 @@ section {
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    /*visibility: hidden;*/
 }
 
 .title {
