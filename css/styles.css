@@ -2,6 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* color-palette.css */
+
+/*:root {*/
+/*    --primary-color:  #f0fff0 ; !* Dark Gray *!*/
+/*    --secondary-color: #b2d8b2   ; !* White *!*/
+/*    --accent-color: #1c6b1c; !* Gold *!*/
+/*}*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +17,14 @@
 
 body {
     font-family: "Poppins", sans-serif;
-
     padding-top: 17vh; /* Adjust this value based on your navbar's height */
+
+    /*background-color: var(--primary-color);*/
+    /*color: var(--secondary-color);*/
 }
+/*a {*/
+/*    color: var(--accent-color);*/
+/*}*/
 
 html {
     scroll-behavior: smooth;
@@ -553,3 +566,4 @@ footer {
 footer p {
     text-align: center;
 }
+
